@@ -11,47 +11,52 @@
 </head>
 <body class="container">
     <header id="header" class="header">
-        <div class="title-container">
+        <div class="title-container" id="title-container">
             <h1 id="title" class="header-title">AruX new employee survey</h1>
             <p id="description" class="header-text">Let's talk about how these first days have been for you</p>
         </div>
     </header>
     <main id="main" class="main">
-        <div class="form-container">
+        <div class="form-container" id="form-container">
             <form id="survey-form" class="main-form">
-                <label for="name" id="name-label">
-                    <input type="name" id="name" placeholder="Your name" required>
-                </label>
-                <label for="email" id="email-label">
-                    <input type="email" id="email" placeholder="Your email" required>
-                </label>
-                <label for="number" id="number-label">
-                    <input type="number" id="number"
-                    min="0" max="10" placeholder="How do you rate this first week from 0 to 10">
-                </label>
-                <label for="work-area" >
-                    <select id="dropdown" class="form-select">
+                <label for="name" id="name-label">Your name<br>
+                    <input type="name" class="form-item-border" id="name" placeholder="name" required>
+                </label><br><br>
+                <label for="email" id="email-label">Your email<br>
+                    <input type="email" class="form-item-border" id="email" placeholder="email" required>
+                </label><br><br>
+                <label for="number" id="number-label">How do you rate your first week (from 1 to 10)?<br>
+                    <input type="number" id="number" class="form-item-border"
+                    min="1" max="10" placeholder="Rate">
+                </label><br><br>
+                <label for="work-area" >In wich area do you work?<br>
+                    <select id="dropdown" class="form-select form-item-border">
                         <option>Front-end</option>
                         <option>Back-end</option>
                         <option>UX/UI</option>
                         <option>DevOps</option>
                     </select>
-                </label>
-                <label for="area-interest">
-                    <input type="radio" name="area-interest" value="Front-end"> Front-end
-                    <input type="radio" name="area-interest" value="Back-end"> Back-end
-                    <input type="radio" name="area-interest" value="UX/UI"> UX/UI
+                </label><br><br>
+                <hr>
+                <label for="area-interest">In what area would you like to work next?<br>
+                    <input type="radio" name="area-interest" value="Front-end"> Front-end<br>
+                    <input type="radio" name="area-interest" value="Back-end"> Back-end<br>
+                    <input type="radio" name="area-interest" value="UX/UI"> UX/UI<br>
                     <input type="radio" name="area-interest" value="DevOps"> DevOps
-                </label>
-                    <label for="suggestions">
-                        <input type="checkbox" name="suggestions" value="More meetings"> More meetings
-                        <input type="checkbox" name="suggestions" value="Less meetings"> Less meetings
-                        <input type="checkbox" name="suggestions" value="More active breaks"> More active breaks
-                        <input type="checkbox" name="suggestions" value="More giveaways"> More giveaways
+                </label><br><br>
+                <hr>
+                    <label for="suggestions">Select one or more suggestions:<br>
+                        <input type="checkbox" name="suggestions" value="More meetings"> More meetings<br>
+                        <input type="checkbox" name="suggestions" value="Less meetings"> Less meetings<br>
+                        <input type="checkbox" name="suggestions" value="More active breaks"> More active breaks<br>
+                        <input type="checkbox" name="suggestions" value="More giveaways"> More giveaways<br>
                         <input type="checkbox" name="suggestions" value="Let's have background music"> Let's have background music
-                    </label>
-                        <textarea id="textarea" class="text-area" name="textarea">
+                    </label><br><br>
+                    <hr>
+                    <label for="textarea">Tell us in your words how you felt this first week<br>
+                        <textarea id="textarea" class="text-area form-item-border" name="textarea">
                         </textarea>
+                    </label><br>
                     <button type="submit" id="submit" class="form-submit-button">Submit</button>
             </form>
         </div>
