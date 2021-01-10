@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/arux-favicon.png" type="image/x-icon">
+    <meta name="description" content="AruX new empleyee survery">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AruX new employee survey | By ArudoPE</title>
+</head>
+<body class="container">
+    <header id="header" class="header">
+        <div class="title-container">
+            <h1 id="title" class="header-title">AruX new employee survey</h1>
+            <p id="description" class="header-text">Let's talk about how these first days have been for you</p>
+        </div>
+    </header>
+    <main id="main" class="main">
+        <div class="form-container">
+            <form id="survey-form" class="main-form">
+                <label for="name" id="name-label">
+                    <input type="name" id="name" placeholder="Your name" required>
+                </label>
+                <label for="email" id="email-label">
+                    <input type="email" id="email" placeholder="Your email" required>
+                </label>
+                <label for="number" id="number-label">
+                    <input type="number" id="number"
+                    min="0" max="10" placeholder="How do you rate this first week from 0 to 10">
+                </label>
+                <label for="work-area" >
+                    <select id="dropdown" class="form-select">
+                        <option>Front-end</option>
+                        <option>Back-end</option>
+                        <option>UX/UI</option>
+                        <option>DevOps</option>
+                    </select>
+                </label>
+                <label for="area-interest">
+                    <input type="radio" name="area-interest" value="Front-end"> Front-end
+                    <input type="radio" name="area-interest" value="Back-end"> Back-end
+                    <input type="radio" name="area-interest" value="UX/UI"> UX/UI
+                    <input type="radio" name="area-interest" value="DevOps"> DevOps
+                </label>
+                    <label for="suggestions">
+                        <input type="checkbox" name="suggestions" value="More meetings"> More meetings
+                        <input type="checkbox" name="suggestions" value="Less meetings"> Less meetings
+                        <input type="checkbox" name="suggestions" value="More active breaks"> More active breaks
+                        <input type="checkbox" name="suggestions" value="More giveaways"> More giveaways
+                        <input type="checkbox" name="suggestions" value="Let's have background music"> Let's have background music
+                    </label>
+                        <textarea id="textarea" class="text-area" name="textarea">
+                        </textarea>
+                    <button type="submit" id="submit" class="form-submit-button">Submit</button>
+            </form>
+        </div>
+    </main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
